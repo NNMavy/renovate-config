@@ -7,12 +7,12 @@
     ":disableRateLimiting",
     ":enablePreCommit",
     ":semanticCommits",
-    "github>szinn/renovate-config:automerge-github-actions.json5",
-    "github>szinn/renovate-config:labels.json5",
-    "github>szinn/renovate-config:semantic-commits.json5",
-    "github>szinn/renovate-config:generic-regex-manager.json5"
+    "github>NNMavy/renovate-config:automerge-github-actions.json5",
+    "github>NNMavy/renovate-config:labels.json5",
+    "github>NNMavy/renovate-config:semantic-commits.json5",
+    "github>NNMavy/renovate-config:generic-regex-manager.json5"
   ],
-  "timezone": "America/Toronto",
+  "timezone": "Europe/Amsterdam",
   "dependencyDashboardTitle": "Renovate Dashboard",
   "suppressNotifications": ["prEditedNotification", "prIgnoreNotification"],
   "commitBodyTable": true,
