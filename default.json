@@ -24,7 +24,7 @@
       "matchHost": "ghcr.io",
       "hostType": "docker",
       "username": "NNMavy",
-      "password": {{ secrets.GITHUB_COM_TOKEN }}
+      "password": "{{ secrets.GITHUB_COM_TOKEN }}"
     }
   ]
 }
