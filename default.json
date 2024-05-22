@@ -24,9 +24,7 @@
       "matchHost": "ghcr.io",
       "hostType": "docker",
       "username": "NNMavy",
-      "encrypted": {
-        "password": "wcFMA/xDdHCJBTolAQ//buBu3Y/Tn4nMWKej4fZvkzyOrfqTJ5ROYJQS1+XK1aUCAtrsvTisoPowbhHtiwXwhd6VqnO7VtwZXMVmJ6XWOZwbrYPdKaRxhHj9DL8y4rfKoy7yqXGTcFNDJbL3d8HbE6BPyULIPjkrRPetSNGe6/LF9+0VuwT195X302ui3ex/IE6XOd1OGm/0nKfhkMIyveCHC1mt8vobyf7oezQvQBejEkTX3dr6h7WzC3lEHxI+YWt+EopKPDjAvj+oZY64xWrrFEcY+DUgx6aGnulORE74UqxJoP7Z505LggVi4/h6GQ33fYtCF3SWCu9A9sEg977O1X7/Ts6WHyKfqGyqTlNtaDE2UPykiOAPrQB1yFlA21AdcLafDJI5wXpm9RxMvR6pXEm0rAzg59826IK4Psd/MTXfRq8m8k8qW69IcKnAHHQrFpQ9UJ8n4lkzyzEsaDU2qD/Gif3zWefRMy0fY2SVGdJ3evwS0xn4J6DsJvVOxBrq5hJanVCCARqLIpzNLaFpNTlu1rZg5JEQzZerXZCibHDaZgi4olmEmAdaNFJVq6TkkctoMfhJe1anWovtOWLflbigJHtiNyimPPFtD5Lgs6BguYTnrMT9OlclAfVPMa3ZkKtWk/+T5zyjSqDyxvIAFsLaV37/9+3gTrblmTObLS6lYds+hLH2Zal10gHSdQFj+fTZacdM5d7SQWt8AD1xeLwYtU6R9J/Y3/P6UVnwiaQgFzqLXJhj2aJ3x7YpXT7fiHiLUcv2Mzt/KkJ8W+UlNImA49IrLZHWqiIGFhyJwTlPKmtPqiLtJmxNVMcfoacfzCRqNOKDUUN5udkiCBcHITCyHQ"
-      }
+      "password": {{ secrets.GITHUB_COM_TOKEN }}
     }
   ]
 }
