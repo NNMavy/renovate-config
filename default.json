@@ -1,24 +1,25 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended",
-    "docker:enableMajor",
-    "helpers:pinGitHubActionDigests",
+    "config:base",
+    ":dependencyDashboard",
     ":disableRateLimiting",
+    "docker:enableMajor",
+    "docker:pinDigests",
+    ":automergeDigest",
     ":enablePreCommit",
-    ":semanticCommits",
     "github>NNMavy/renovate-config:automerge-github-actions.json5",
     "github>NNMavy/renovate-config:labels.json5",
     "github>NNMavy/renovate-config:semantic-commits.json5",
     "github>NNMavy/renovate-config:generic-regex-manager.json5"
   ],
+  "onboarding": false,
+  "requireConfig": "optional",
   "timezone": "Europe/Amsterdam",
   "dependencyDashboardTitle": "Renovate Dashboard",
-  "suppressNotifications": ["prEditedNotification", "prIgnoreNotification"],
+  "suppressNotifications": ["prIgnoreNotification"],
   "commitBodyTable": true,
-  "rebaseWhen": "conflicted",
-  "platformCommit": true,
-  "prBodyTemplate": "{{{header}}}{{{table}}}{{{warnings}}}{{{notes}}}{{{changelogs}}}",
+  "rebaseWhen": "auto",
   "hostRules": [
     {
       "matchHost": "ghcr.io",
