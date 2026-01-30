@@ -14,18 +14,13 @@
     "github>NNMavy/renovate-config:generic-regex-manager.json5"
   ],
   "onboarding": false,
-  "requireConfig": "optional",
   "timezone": "Europe/Amsterdam",
   "dependencyDashboardTitle": "Renovate Dashboard",
-  "suppressNotifications": ["prIgnoreNotification"],
+  "suppressNotifications": [
+    "prEditedNotification",
+    "prIgnoreNotification"
+  ],
   "commitBodyTable": true,
   "rebaseWhen": "auto",
-  "hostRules": [
-    {
-      "matchHost": "ghcr.io",
-      "hostType": "docker",
-      "username": "NNMavy",
-      "password": "{{ secrets.GITHUB_COM_TOKEN }}"
-    }
-  ]
+  "platformCommit": "enabled"
 }
