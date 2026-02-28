@@ -7,8 +7,6 @@
       "automergeType": "branch",
       "matchUpdateTypes": ["digest"],
       "ignoreTests": true,
-      "commitMessagePrefix": "chore(deps)!: ",
-      "commitMessageTopic": "pin docker dependencies"
     }
   ]
 }
