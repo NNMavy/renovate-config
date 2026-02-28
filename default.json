@@ -1,17 +1,17 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base",
-    ":dependencyDashboard",
-    ":disableRateLimiting",
+    "config:recommended",
     "docker:enableMajor",
-    "docker:pinDigests",
-    ":automergeDigest",
-    ":enablePreCommit",
+    "helpers:pinGitHubActionDigests",
     "github>NNMavy/renovate-config:automerge-github-actions.json5",
+    "github>NNMavy/renovate-config:commit-message.json5",
     "github>NNMavy/renovate-config:labels.json5",
     "github>NNMavy/renovate-config:semantic-commits.json5",
-    "github>NNMavy/renovate-config:generic-regex-manager.json5"
+    "github>NNMavy/renovate-config:generic-regex-manager.json5",
+    ":dependencyDashboard",
+    ":disableRateLimiting",
+    ":enablePreCommit"
   ],
   "onboarding": false,
   "timezone": "Europe/Amsterdam",
